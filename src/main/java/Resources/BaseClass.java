@@ -1,15 +1,25 @@
 package Resources;
 
+import java.io.File;
 import java.io.FileInputStream;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+
+import com.extentManager.ExtentManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -38,7 +48,10 @@ public class BaseClass {
 			System.out.println("Browser is not accessible");
 		}
 	}
-	
+	 @BeforeTest
+	 public void ExtentReport() {
+		 ExtentManager.setup();
+	 }
 	@BeforeMethod
 	public void launchUrl() throws IOException
 	{
@@ -54,4 +67,22 @@ public class BaseClass {
 		 
 	  driver.quit();
 	 }
+
+	 @AfterTest
+	  public void endReport() {
+	     ExtentManager.endReport();
+	  }
+	 public static String screenShot(WebDriver driver,String filename) {
+		  String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		  TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		  File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
+		  String destination = System.getProperty("user.dir")+"\\ScreenShot\\"+filename+"_"+dateName+".png";
+		  File finalDestination= new File(destination);
+		  try {
+		   FileUtils.copyFile(source, finalDestination);
+		  } catch (Exception e) {
+		   e.getMessage();
+		  }
+		  return destination;
+		 }
 }

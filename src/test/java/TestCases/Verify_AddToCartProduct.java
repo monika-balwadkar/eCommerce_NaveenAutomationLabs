@@ -49,14 +49,8 @@ public class Verify_AddToCartProduct extends BaseClass {
 		String expectedPrice=("$"+expectedPriceConvert);
 		
 		System.out.println("Expected addition :"+expectedPrice);
-		if(actualPrice.equals(expectedPrice))
-		{
-			System.out.println("Pass");
-		}
-		else
-		{
-			System.out.println("Fail");
-		}
+
+		CommonUtilities.handleAssertions(actualPrice, expectedPrice, "Price is not matching");
 	}
 	
 }

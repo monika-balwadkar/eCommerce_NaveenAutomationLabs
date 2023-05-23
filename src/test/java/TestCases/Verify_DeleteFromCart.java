@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import PageObjectModel.DeleteFromCart;
 import Resources.BaseClass;
+import Resources.CommonUtilities;
 import Resources.Constant;
 
 public class Verify_DeleteFromCart extends BaseClass {
@@ -27,6 +28,8 @@ public class Verify_DeleteFromCart extends BaseClass {
 		obj.clickViewCart().click();
 		obj.removeFromCart().click();
 		System.out.println("Message: " + obj.fetchmsg1().getText() + "\n" + obj.fetchmsg2().getText());
+		String s= obj.errMsgfCheck().getText();
+		CommonUtilities.handleAssertions(s,Constant.expectedErrMsg,"Expty list not there");
 		
 	}
 }

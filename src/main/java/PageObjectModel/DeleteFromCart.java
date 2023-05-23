@@ -19,10 +19,15 @@ public class DeleteFromCart {
 	private By removeFromCart = By.xpath("//button[@class='btn btn-danger']");
 	private By fetchmsg1 = By.xpath("//div[@id='content']//h1");
 	private By fetchmsg2 = By.xpath("//div[@id='content']//h1/following-sibling::p");
+	private By errMsg= By.xpath("(//p[contains(text(),'Your shopping cart is empty!')])[2]");
+	
+
 	
 	public DeleteFromCart(WebDriver driver2) {
 		this.driver = driver2;
 	}
+	
+
 
 	public WebElement searchBox() {
 		return driver.findElement(searchBox);
@@ -66,5 +71,8 @@ public class DeleteFromCart {
 	
 	public WebElement fetchmsg2() {
 		return driver.findElement(fetchmsg2);
+	}
+	public WebElement errMsgfCheck() {
+		return driver.findElement(errMsg);
 	}
 }

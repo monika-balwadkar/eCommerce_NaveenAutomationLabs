@@ -26,4 +26,6 @@ public class Constant {
 //Product Comparison
 	public static String searchBox = "MacBook";
 	
+	public static String expectedErrMsg="Your shopping cart is empty!";
+	
 }
