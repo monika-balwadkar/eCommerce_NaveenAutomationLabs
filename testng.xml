@@ -5,10 +5,10 @@
     <classes>
       <class name="TestCases.Verify_ProductComparison"/>
       <class name="TestCases.Verify_Register_UsingExcelSheet"/>
-      <class name="TestCases.Verify_Footer"/>
       <class name="TestCases.Verify_DeleteFromCart"/>
-      <class name="TestCases.Verify_AddToCartProduct"/>
+      <class name="TestCases.Verify_Footer"/>
       <class name="TestCases.Verify_HandleAssertion"/>
+      <class name="TestCases.Verify_AddToCartProduct"/>
       <class name="TestCases.Verify_MainMenu"/>
       <class name="TestCases.Verify_Header"/>
     </classes>

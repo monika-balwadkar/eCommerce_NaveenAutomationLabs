@@ -3,12 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestCases.Verify_DeleteFromCart">
+      <class name="TestCases.Verify_MainMenu">
         <methods>
+          <include name="verifyMainMenu"/>
           <include name="launchUrl"/>
-          <include name="deleteFromCart"/>
+          <include name="driverclose"/>
         </methods>
-      </class> <!-- TestCases.Verify_DeleteFromCart -->
+      </class> <!-- TestCases.Verify_MainMenu -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

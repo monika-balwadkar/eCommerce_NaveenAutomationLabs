@@ -28,16 +28,7 @@ public class CommonUtilities {
 		return d;
 	}
 	
-//Assertion Method
-/*	public static void handleAssertion(String expct,String actl)
-	{
-		SoftAssert s=new SoftAssert();
-		String expected=expct;
-		String actual=actl;
-		s.assertEquals(actual,expected);
-		s.assertAll();
-	}
-*/
+
 	public static void handleAssertions(String actual, String expected, String message) {
 
 		SoftAssert a = new SoftAssert();
