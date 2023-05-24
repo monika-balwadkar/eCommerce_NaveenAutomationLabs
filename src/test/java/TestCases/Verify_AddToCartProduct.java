@@ -10,7 +10,8 @@ import Resources.BaseClass;
 import Resources.CommonUtilities;
 import Resources.Constant;
 
-public class Verify_AddToCartProduct extends BaseClass {
+public class Verify_AddToCartProduct extends BaseClass 
+{
 
 	@Test
 	public static void VerifyAddToCartProduct() throws InterruptedException
@@ -47,9 +48,9 @@ public class Verify_AddToCartProduct extends BaseClass {
 		double d3=CommonUtilities.productPriceHandle(expectedPriceCart);//Expected Price from cart
 		String expectedPriceConvert=Double.toString(d3); //convert expected price into double
 		String expectedPrice=("$"+expectedPriceConvert);
-		
 		System.out.println("Expected addition :"+expectedPrice);
-
+		
+		//Assertion handle: Expected price with actual price
 		CommonUtilities.handleAssertions(actualPrice, expectedPrice, "Price is not matching");
 	}
 	

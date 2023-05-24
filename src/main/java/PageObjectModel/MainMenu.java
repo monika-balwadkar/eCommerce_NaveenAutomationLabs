@@ -10,6 +10,8 @@ public class MainMenu {
 	By desktop_menu=By.xpath("(//li[@class='dropdown'])[2]"); //desktop menu
 	By show_all_desk=By.xpath("(//a[@class='see-all'])[1]"); //desktop see all
 	By add_to_wishlist=By.xpath("(//i[@class='fa fa-heart'])[3]"); //desktop added to wishlist:cannon cam
+	By WishList=By.xpath("//span[contains(text(),'Wish List (1)')]");
+	
 //Laptop Xpath
 	By laptop_menu=By.xpath("(//li[@class='dropdown'])[3]"); //laptop menu
 	By show_all_laptop=By.xpath("(//a[@class='see-all'])[2]");
@@ -18,6 +20,8 @@ public class MainMenu {
 	By show_by_laptop=By.xpath("//select[@id='input-limit']");
 	By compare_add_laptop=By.xpath("(//BUTTON[@TYPE='button'])[14]");
 	By product_compare_laptop=By.xpath("//a[@id='compare-total']");
+	By ProductComparison=By.xpath("//h1[contains(text(),'Product Comparison')]");
+	
 //Component Xpath
 	By component_menu=By.xpath("(//li[@class='dropdown'])[4]");
 	By component_option=By.xpath("//a[@href='https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=25_28']");
@@ -25,6 +29,8 @@ public class MainMenu {
 //MP3Player Xpath
 	By mp3player_menu=By.xpath("(//li[@class='dropdown'])[5]");
 	By mp3_option=By.xpath("//a[@href='https://naveenautomationlabs.com/opencart/index.php?route=product/category&path=34_56']");
+	By mp3verify=By.xpath("//h2[contains(text(),'test 24')]");
+	
 	
 	public MainMenu(WebDriver driver2) {
 		// TODO Auto-generated constructor stub
@@ -42,6 +48,10 @@ public class MainMenu {
 	public WebElement desktopAddtoWishlistClick()
 	{
 		return driver.findElement(add_to_wishlist);
+	}
+	public WebElement WishList()
+	{
+		return driver.findElement(WishList);
 	}
 ///Laptop
 	public WebElement laptopMenuClick()
@@ -72,6 +82,10 @@ public class MainMenu {
 	{
 		return driver.findElement(product_compare_laptop);
 	}
+	public WebElement ProductComparison()
+	{
+		return driver.findElement(ProductComparison);
+	}
 //Component
 	public WebElement componentMenuClick()
 	{
@@ -93,6 +107,10 @@ public class MainMenu {
 	public WebElement mp3OptionClick()
 	{
 		return driver.findElement(mp3_option);
+	}
+	public WebElement mp3verify()
+	{
+		return driver.findElement(mp3verify);
 	}
 	
 }

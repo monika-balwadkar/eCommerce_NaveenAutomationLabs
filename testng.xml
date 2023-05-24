@@ -4,16 +4,18 @@
 	<listeners>
 		<listener class-name="com.Listener.ListenerClass"></listener>
 	</listeners>
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="TestCases.Verify_ProductComparison"/>
-      <class name="TestCases.Verify_Register_UsingExcelSheet"/>
-      <class name="TestCases.Verify_DeleteFromCart"/>
-      <class name="TestCases.Verify_Footer"/>
-      <class name="TestCases.Verify_HandleAssertion"/>
-      <class name="TestCases.Verify_AddToCartProduct"/>
-      <class name="TestCases.Verify_MainMenu"/>
-      <class name="TestCases.Verify_Header"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="TestCases.Verify_Login" />
+			<class name="TestCases.Verify_ProductComparison" />
+			<class name="TestCases.Verify_Footer" />
+			<class name="TestCases.Verify_DeleteFromCart" />
+			<class name="TestCases.Verify_Register_UsingExcelSheet" />
+			<class name="TestCases.Verify_AddToCartProduct" />
+			<class name="TestCases.Verify_MainMenu" />
+			<class name="TestCases.Verify_Header" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

@@ -16,8 +16,8 @@ public class AddToCart_Product {
 	public By totalItemBtn=By.xpath("//button[@class='btn btn-inverse btn-block btn-lg dropdown-toggle']");
 	public By expectedTotalPrice=By.xpath("(//td[@class='text-right'])[12]");
 	
-	public AddToCart_Product(WebDriver driver2) {
-		// TODO Auto-generated constructor stub
+	public AddToCart_Product(WebDriver driver2)
+	{
 		this.driver=driver2;
 	}
 	public WebElement searchEnter()

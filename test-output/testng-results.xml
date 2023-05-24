@@ -1,33 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="14" total="22" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-23T18:42:37 IST" name="Default suite" finished-at="2023-05-23T18:43:17 IST" duration-ms="39931">
+  <suite started-at="2023-05-24T16:04:04 IST" name="Suite" finished-at="2023-05-24T16:08:37 IST" duration-ms="272750">
     <groups>
     </groups>
-    <test started-at="2023-05-23T18:42:37 IST" name="Default test" finished-at="2023-05-23T18:43:17 IST" duration-ms="39931">
-      <class name="TestCases.Verify_Footer">
-        <test-method is-config="true" signature="ExtentReport()[pri:0, instance:TestCases.Verify_Footer@36902638]" started-at="2023-05-23T18:42:37 IST" name="ExtentReport" finished-at="2023-05-23T18:42:38 IST" duration-ms="1222" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtentReport -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestCases.Verify_Footer@36902638]" started-at="2023-05-23T18:42:39 IST" name="launchUrl" finished-at="2023-05-23T18:42:55 IST" duration-ms="16382" status="PASS">
+    <test started-at="2023-05-24T16:04:04 IST" name="Test" finished-at="2023-05-24T16:08:37 IST" duration-ms="272750">
+      <class name="TestCases.Verify_Header">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestCases.Verify_Header@38d8f54a]" started-at="2023-05-24T16:07:42 IST" name="launchUrl" finished-at="2023-05-24T16:07:56 IST" duration-ms="13756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="footer()[pri:0, instance:TestCases.Verify_Footer@36902638]" started-at="2023-05-23T18:42:55 IST" name="footer" finished-at="2023-05-23T18:43:15 IST" duration-ms="20327" status="PASS">
+        <test-method signature="verifyHeader()[pri:0, instance:TestCases.Verify_Header@38d8f54a]" started-at="2023-05-24T16:07:56 IST" name="verifyHeader" finished-at="2023-05-24T16:08:35 IST" duration-ms="39095" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- footer -->
-        <test-method is-config="true" signature="driverclose()[pri:0, instance:TestCases.Verify_Footer@36902638]" started-at="2023-05-23T18:43:15 IST" name="driverclose" finished-at="2023-05-23T18:43:16 IST" duration-ms="607" status="PASS">
+        </test-method> <!-- verifyHeader -->
+        <test-method is-config="true" signature="driverclose()[pri:0, instance:TestCases.Verify_Header@38d8f54a]" started-at="2023-05-24T16:08:35 IST" name="driverclose" finished-at="2023-05-24T16:08:35 IST" duration-ms="493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverclose -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:TestCases.Verify_Footer@36902638]" started-at="2023-05-23T18:43:16 IST" name="endReport" finished-at="2023-05-23T18:43:17 IST" duration-ms="1186" status="PASS">
+      </class> <!-- TestCases.Verify_Header -->
+      <class name="TestCases.Verify_DeleteFromCart">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestCases.Verify_DeleteFromCart@6aeb35e6]" started-at="2023-05-24T16:05:43 IST" name="launchUrl" finished-at="2023-05-24T16:05:59 IST" duration-ms="15540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="deleteFromCart()[pri:0, instance:TestCases.Verify_DeleteFromCart@6aeb35e6]" started-at="2023-05-24T16:05:59 IST" name="deleteFromCart" finished-at="2023-05-24T16:06:13 IST" duration-ms="14152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteFromCart -->
+        <test-method is-config="true" signature="driverclose()[pri:0, instance:TestCases.Verify_DeleteFromCart@6aeb35e6]" started-at="2023-05-24T16:06:13 IST" name="driverclose" finished-at="2023-05-24T16:06:13 IST" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+      </class> <!-- TestCases.Verify_DeleteFromCart -->
+      <class name="TestCases.Verify_Footer">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestCases.Verify_Footer@293a5bf6]" started-at="2023-05-24T16:04:24 IST" name="launchUrl" finished-at="2023-05-24T16:04:31 IST" duration-ms="7815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="footer()[pri:0, instance:TestCases.Verify_Footer@293a5bf6]" started-at="2023-05-24T16:04:31 IST" name="footer" finished-at="2023-05-24T16:05:42 IST" duration-ms="71094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footer -->
+        <test-method is-config="true" signature="driverclose()[pri:0, instance:TestCases.Verify_Footer@293a5bf6]" started-at="2023-05-24T16:05:42 IST" name="driverclose" finished-at="2023-05-24T16:05:43 IST" duration-ms="603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+      </class> <!-- TestCases.Verify_Footer -->
+      <class name="TestCases.Verify_AddToCartProduct">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestCases.Verify_AddToCartProduct@f6efaab]" started-at="2023-05-24T16:06:59 IST" name="launchUrl" finished-at="2023-05-24T16:07:07 IST" duration-ms="8553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="VerifyAddToCartProduct()[pri:0, instance:TestCases.Verify_AddToCartProduct@f6efaab]" started-at="2023-05-24T16:07:07 IST" name="VerifyAddToCartProduct" finished-at="2023-05-24T16:07:14 IST" duration-ms="6442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddToCartProduct -->
+        <test-method is-config="true" signature="driverclose()[pri:0, instance:TestCases.Verify_AddToCartProduct@f6efaab]" started-at="2023-05-24T16:07:14 IST" name="driverclose" finished-at="2023-05-24T16:07:14 IST" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+      </class> <!-- TestCases.Verify_AddToCartProduct -->
+      <class name="TestCases.Verify_Register_UsingExcelSheet">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestCases.Verify_Register_UsingExcelSheet@1283bb96]" started-at="2023-05-24T16:06:13 IST" name="launchUrl" finished-at="2023-05-24T16:06:22 IST" duration-ms="8611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="registerUser()[pri:0, instance:TestCases.Verify_Register_UsingExcelSheet@1283bb96]" started-at="2023-05-24T16:06:22 IST" name="registerUser" finished-at="2023-05-24T16:06:32 IST" duration-ms="10357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method is-config="true" signature="driverclose()[pri:0, instance:TestCases.Verify_Register_UsingExcelSheet@1283bb96]" started-at="2023-05-24T16:06:32 IST" name="driverclose" finished-at="2023-05-24T16:06:33 IST" duration-ms="1009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+      </class> <!-- TestCases.Verify_Register_UsingExcelSheet -->
+      <class name="TestCases.Verify_Login">
+        <test-method is-config="true" signature="ExtentReport()[pri:0, instance:TestCases.Verify_Login@747ddf94]" started-at="2023-05-24T16:04:04 IST" name="ExtentReport" finished-at="2023-05-24T16:04:05 IST" duration-ms="1050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestCases.Verify_Login@747ddf94]" started-at="2023-05-24T16:04:05 IST" name="launchUrl" finished-at="2023-05-24T16:04:19 IST" duration-ms="13643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="validlogin()[pri:0, instance:TestCases.Verify_Login@747ddf94]" started-at="2023-05-24T16:04:19 IST" name="validlogin" finished-at="2023-05-24T16:04:23 IST" duration-ms="4188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validlogin -->
+        <test-method is-config="true" signature="driverclose()[pri:0, instance:TestCases.Verify_Login@747ddf94]" started-at="2023-05-24T16:04:23 IST" name="driverclose" finished-at="2023-05-24T16:04:24 IST" duration-ms="673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:TestCases.Verify_Login@747ddf94]" started-at="2023-05-24T16:08:35 IST" name="endReport" finished-at="2023-05-24T16:08:37 IST" duration-ms="1388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- TestCases.Verify_Footer -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- TestCases.Verify_Login -->
+      <class name="TestCases.Verify_MainMenu">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestCases.Verify_MainMenu@3c19aaa5]" started-at="2023-05-24T16:07:14 IST" name="launchUrl" finished-at="2023-05-24T16:07:23 IST" duration-ms="8561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="verifyMainMenu()[pri:0, instance:TestCases.Verify_MainMenu@3c19aaa5]" started-at="2023-05-24T16:07:23 IST" name="verifyMainMenu" finished-at="2023-05-24T16:07:41 IST" duration-ms="18191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMainMenu -->
+        <test-method is-config="true" signature="driverclose()[pri:0, instance:TestCases.Verify_MainMenu@3c19aaa5]" started-at="2023-05-24T16:07:41 IST" name="driverclose" finished-at="2023-05-24T16:07:42 IST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+      </class> <!-- TestCases.Verify_MainMenu -->
+      <class name="TestCases.Verify_ProductComparison">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:TestCases.Verify_ProductComparison@74f0ea28]" started-at="2023-05-24T16:06:33 IST" name="launchUrl" finished-at="2023-05-24T16:06:44 IST" duration-ms="10348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="productComparison()[pri:0, instance:TestCases.Verify_ProductComparison@74f0ea28]" started-at="2023-05-24T16:06:44 IST" name="productComparison" finished-at="2023-05-24T16:06:58 IST" duration-ms="14464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productComparison -->
+        <test-method is-config="true" signature="driverclose()[pri:0, instance:TestCases.Verify_ProductComparison@74f0ea28]" started-at="2023-05-24T16:06:58 IST" name="driverclose" finished-at="2023-05-24T16:06:59 IST" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+      </class> <!-- TestCases.Verify_ProductComparison -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

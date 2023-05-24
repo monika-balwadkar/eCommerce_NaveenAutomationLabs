@@ -48,10 +48,13 @@ public class BaseClass {
 			System.out.println("Browser is not accessible");
 		}
 	}
+	
 	 @BeforeTest
-	 public void ExtentReport() {
+	 public void ExtentReport() 
+	 {
 		 ExtentManager.setup();
 	 }
+	 
 	@BeforeMethod
 	public void launchUrl() throws IOException
 	{
@@ -66,23 +69,30 @@ public class BaseClass {
 	{
 		 
 	  driver.quit();
-	 }
+	}
 
-	 @AfterTest
-	  public void endReport() {
+	@AfterTest
+	public void endReport()
+	 {
 	     ExtentManager.endReport();
-	  }
-	 public static String screenShot(WebDriver driver,String filename) {
+	 }
+	
+	 //Screenshot method is used when script is fails.
+	 public static String screenShot(WebDriver driver,String filename)
+	 {
 		  String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		  TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		  File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		  String destination = System.getProperty("user.dir")+"\\ScreenShot\\"+filename+"_"+dateName+".png";
 		  File finalDestination= new File(destination);
-		  try {
-		   FileUtils.copyFile(source, finalDestination);
-		  } catch (Exception e) {
-		   e.getMessage();
+		  try 
+		  {
+			  FileUtils.copyFile(source, finalDestination);
+		  } 
+		  catch (Exception e)
+		  {
+			  e.getMessage();
 		  }
 		  return destination;
-		 }
+	 }
 }

@@ -12,18 +12,19 @@ public class Footer {
 
 	private By linktofooter = By.xpath("(//footer)[1]");
 	private By noOfLink = By.xpath("(//footer//div[@class='row']//div//ul//li)//a");
-	
-	
-	
-	public Footer(WebDriver driver2) {
+		
+	public Footer(WebDriver driver2)
+	{
 		this.driver=driver2;
 	}
 	
-	public WebElement linktofooter() {
+	public WebElement linktofooter()
+	{
 		return driver.findElement(linktofooter);
 	}
 	
-	public List<WebElement> noOfLink() {
+	public List<WebElement> noOfLink() 
+	{
 		return driver.findElements(noOfLink);
 	}
 }

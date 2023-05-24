@@ -5,12 +5,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentManager {
-	public static ExtentSparkReporter htmlReporter;   // repsosnible for look
+public class ExtentManager
+{
+	 public static ExtentSparkReporter htmlReporter;   // repsosnible for look
 	 public static ExtentReports extent; //  Resposnisble for entries
 	 public static ExtentTest test; // Respossible for test status pass/fail
 	 
-	 public static void setup() {
+	 public static void setup()
+	 {
 		 
 		  htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output/myReport.html");
 		  htmlReporter.config().setDocumentTitle("Automation Report");
@@ -21,11 +23,12 @@ public class ExtentManager {
 		  extent.attachReporter(htmlReporter);
 		  extent.setSystemInfo("hostname", "LocalHost");
 		  extent.setSystemInfo("os", "windows8.1");
-		  extent.setSystemInfo("testername", "Samiksha");
+		  extent.setSystemInfo("testername", "Monika");
 		 }
 	 
-	 public static void endReport() {
+	 public static void endReport()
+	 {
 		  extent.flush();
-		  }
+	 }
 
 }

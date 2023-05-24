@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.Verify_Footer">
+      <class name="TestCases.Verify_Register_UsingExcelSheet">
         <methods>
-          <include name="footer"/>
           <include name="ExtentReport"/>
           <include name="launchUrl"/>
           <include name="endReport"/>
           <include name="driverclose"/>
+          <include name="registerUser"/>
         </methods>
-      </class> <!-- TestCases.Verify_Footer -->
+      </class> <!-- TestCases.Verify_Register_UsingExcelSheet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,7 +10,7 @@ public class ProductComparison {
 	public WebDriver driver;
 	
 	private By searchItem = By.xpath("//input[@placeholder='Search']");
-	private By searchBT = By.xpath("(//button[@type='button'])[4]");
+	private By searchBT = By.xpath("//span[@class='input-group-btn']");
 	private By compareBT = By.xpath("(//button[@data-original-title='Compare this Product'])[1]");
 	private By compareBT2 = By.xpath("(//button[@data-original-title='Compare this Product'])[2]");
 	private By clickonCompareProduct = By.linkText("product comparison");
@@ -24,69 +24,89 @@ public class ProductComparison {
 	private By productBrand2 = By.xpath("//td[text()='Brand']/following-sibling::td/following-sibling::td");
 	private By productSummary = By.xpath("//td[text()='Summary']/following-sibling::td");
 	private By productSummary2 = By.xpath("//td[text()='Summary']/following-sibling::td/following-sibling::td");
+	private By comaprisontext=By.xpath("//h1[contains(text(),'Product Comparison')]");
 	
-	
-	public ProductComparison(WebDriver driver2) {
+	public ProductComparison(WebDriver driver2) 
+	{
 		this.driver = driver2;
 	}
 
-	public WebElement searchItem() {
+	public WebElement searchItem()
+	
+	{
 		return driver.findElement(searchItem);
 	}
+	public WebElement comaprisontext() {
+		return driver.findElement(comaprisontext);
+	}
 	
-	public WebElement searchBT() {
+	public WebElement searchBT() 
+	{
 		return driver.findElement(searchBT);
 	}
 	
-	public WebElement compareBT() {
+	public WebElement compareBT()
+	{
 		return driver.findElement(compareBT);
 	}
 	
-	public WebElement compareBT2() {
+	public WebElement compareBT2()
+	{
 		return driver.findElement(compareBT2);
 	}
 	
-	public WebElement clickonCompareProduct() {
+	public WebElement clickonCompareProduct() 
+	{
 		return driver.findElement(clickonCompareProduct);
 	}
 	
-	public WebElement productName() {
+	public WebElement productName()
+	{
 		return driver.findElement(productName);
 	}
 	
-	public WebElement productName2() {
+	public WebElement productName2()
+	{
 		return driver.findElement(productName2);
 	}
 	
-	public WebElement productPrize() {
+	public WebElement productPrize() 
+	{
 		return driver.findElement(productPrize);
 	}
 	
-	public WebElement productPrize1() {
+	public WebElement productPrize1()
+	{
 		return driver.findElement(productPrize1);
 	}
 	
-	public WebElement productModel() {
+	public WebElement productModel()
+	{
 		return driver.findElement(productModel);
 	}
 	
-	public WebElement productModel2() {
+	public WebElement productModel2()
+	{
 		return driver.findElement(productModel2);
 	}
 	
-	public WebElement productBrand() {
+	public WebElement productBrand() 
+	{
 		return driver.findElement(productBrand);
 	}
 	
-	public WebElement productBrand2() {
+	public WebElement productBrand2()
+	{
 		return driver.findElement(productBrand2);
 	}
 	
-	public WebElement productSummary() {
+	public WebElement productSummary()
+	{
 		return driver.findElement(productSummary);
 	}
 	
-	public WebElement productSummary2() {
+	public WebElement productSummary2()
+	{
 		return driver.findElement(productSummary2);
 	}
 }

@@ -9,10 +9,12 @@ import Resources.BaseClass;
 import Resources.CommonUtilities;
 import Resources.Constant;
 
-public class Verify_DeleteFromCart extends BaseClass {
+public class Verify_DeleteFromCart extends BaseClass 
+{
 
 	@Test
-	public void deleteFromCart() throws Exception {
+	public void deleteFromCart() throws Exception
+	{
 
 		DeleteFromCart obj = new DeleteFromCart(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));

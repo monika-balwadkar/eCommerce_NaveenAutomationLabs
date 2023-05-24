@@ -10,25 +10,35 @@ public class Header {
 //Currency
 	By currency=By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[1]");
 	By currency_option=By.xpath("(//button[@class='currency-select btn btn-link btn-block'])[2]");
+	
 //Phone
 	By phone=By.xpath("//i[@class='fa fa-phone']");
 	By ph_name=By.xpath("//input[@id='input-name']");
 	By ph_email=By.xpath("//input[@id='input-email']");
 	By ph_enquiry=By.xpath("//textarea[@id='input-enquiry']");
 	By ph_submit=By.xpath("//input[@type='submit']");
+    By isquerysuccess = By.xpath("//p[contains(text(),'Your enquiry has been successfully sent to the store owner!')]");
+	
 //Account
 	By my_acnt=By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[3]");
 	By acnt_login=By.xpath("(//a[@href='https://naveenautomationlabs.com/opencart/index.php?route=account/login'])[1]");
 	By acnt_email=By.xpath("//input[@id='input-email']");
 	By acnt_password=By.xpath("//input[@id='input-password']");
 	By acnt_login_btn=By.xpath("//input[@type='submit']");
+	 By logincheck = By.xpath("//h2[contains(text(),'My Account')]");
+	 By wishlistsuccesadd = By.xpath("//div[contains(text(),'Success: You have added')]");
+
+	
 //WishList
 	By wishlist=By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[4]");
 	By wishlist_to_addcart=By.xpath("(//i[@class='fa fa-shopping-cart'])[4]");
+	
 //Shopping Cart
 	By shopping_cart=By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[5]");
-	By shopping_cart_qty=By.xpath("(//button[@class='btn btn-primary'])[1]");
+	By shopping_cart_qty=By.xpath("(//input[@type='text'])[2]");
 	By shopping_cart_refresh=By.xpath("(//i[@class='fa fa-refresh'])[1]");
+	By cartcount=By.xpath("(//input[@type='text'])[2]");
+	
 //CheckOut
 	By checkout=By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[6]");
 	By checkout_estimateshiptax=By.xpath("(//a[@class='accordion-toggle'])[2]");
@@ -38,6 +48,7 @@ public class Header {
 	By checkout_estimateshiptax_getquotes=By.xpath("//button[@id='button-quote']");
 	By checkout_estimateshiptax_getquotes_popup_radiobtn=By.xpath("//input[@type='radio']");
 	By checkout_estimateshiptax_getquotes_popup_applybtn=By.xpath("//input[@id='button-shipping']");
+	By checkoutbuttonavailable=By.xpath("//a[@class='btn btn-primary']");
 
 	public Header(WebDriver driver2) {
 		// TODO Auto-generated constructor stub
@@ -74,6 +85,12 @@ public class Header {
 	{
 		return driver.findElement(ph_submit);
 	}
+	
+	public WebElement isquerysuccess()
+	{
+		return driver.findElement(isquerysuccess);
+	}
+
 //Account
 	public WebElement accountClick()
 	{
@@ -95,6 +112,15 @@ public class Header {
 	{
 		return driver.findElement(acnt_login_btn);
 	}
+	public WebElement logincheck()
+	{
+		return driver.findElement(logincheck);
+	}
+	public WebElement wishlistsuccesadd()
+	{
+		return driver.findElement(wishlistsuccesadd);
+	}
+	
 //WishList
 	public WebElement wishlistClick()
 	{
@@ -116,6 +142,10 @@ public class Header {
 	public WebElement shoppingCartRefreshClick()
 	{
 		return driver.findElement(shopping_cart_refresh);
+	}
+	public WebElement cartcount()
+	{
+		return driver.findElement(cartcount);
 	}
 //Checkout
 	public WebElement checkoutClick()
@@ -149,5 +179,9 @@ public class Header {
 	public WebElement checkoutGetQuotesPopupApplyClick()
 	{
 		return driver.findElement(checkout_estimateshiptax_getquotes_popup_applybtn);
+	}
+	public WebElement checkoutbuttonavailable()
+	{
+		return driver.findElement(checkoutbuttonavailable);
 	}
 }

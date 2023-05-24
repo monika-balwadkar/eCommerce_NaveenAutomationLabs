@@ -21,58 +21,68 @@ public class DeleteFromCart {
 	private By fetchmsg2 = By.xpath("//div[@id='content']//h1/following-sibling::p");
 	private By errMsg= By.xpath("(//p[contains(text(),'Your shopping cart is empty!')])[2]");
 	
-
 	
-	public DeleteFromCart(WebDriver driver2) {
+	public DeleteFromCart(WebDriver driver2)
+	{
 		this.driver = driver2;
 	}
 	
-
-
-	public WebElement searchBox() {
+	public WebElement searchBox()
+	{
 		return driver.findElement(searchBox);
 	}
 	
-	public WebElement searchBT() {
+	public WebElement searchBT() 
+	{
 		return driver.findElement(searchBT);
 	}
 	
-	public WebElement clickOnSelectedItem() {
+	public WebElement clickOnSelectedItem()
+	{
 		return driver.findElement(clickOnSelectedItem);
 	}
 	
-	public WebElement addToCart() {
+	public WebElement addToCart() 
+	{
 		return driver.findElement(addToCart);
 	}
 	
-	public WebElement fetchNotification() {
+	public WebElement fetchNotification()
+	{
 		return driver.findElement(fetchNotification);
 	}
 	
-	public WebElement fetchATCText() {
+	public WebElement fetchATCText()
+	{
 		return driver.findElement(fetchATCText);
 	}
 	
-	public WebElement ATCBt() {
+	public WebElement ATCBt()
+	{
 		return driver.findElement(ATCBt);
 	}
 	
-	public WebElement clickViewCart() {
+	public WebElement clickViewCart() 
+	{
 		return driver.findElement(clickViewCart);
 	}
 	
-	public WebElement removeFromCart() {
+	public WebElement removeFromCart()
+	{
 		return driver.findElement(removeFromCart);
 	}
 	
-	public WebElement fetchmsg1() {
+	public WebElement fetchmsg1()
+	{
 		return driver.findElement(fetchmsg1);
 	}
 	
-	public WebElement fetchmsg2() {
+	public WebElement fetchmsg2() 
+	{
 		return driver.findElement(fetchmsg2);
 	}
-	public WebElement errMsgfCheck() {
+	public WebElement errMsgfCheck()
+	{
 		return driver.findElement(errMsg);
 	}
 }

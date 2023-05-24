@@ -18,49 +18,72 @@ public class Register_UsingExcelSheetData {
 	private By enterConfirmPW = By.xpath("//input[@id='input-confirm']");
 	private By Checkagree = By.xpath("//input[@name='agree']");
 	private By clickContinue = By.xpath("//input[@value='Continue']");
+	private By validtext=By.xpath("//p[contains(text(),'Congratulations! Your new account has been successfully created!')]");
+	private By email = By.xpath("//input[@name='email']");
 
-	public Register_UsingExcelSheetData(WebDriver driver2) {
+	public Register_UsingExcelSheetData(WebDriver driver2) 
+	{
 		this.driver=driver2;
 	}
 
-	public WebElement navigateToMyAc() {
+	public WebElement navigateToMyAc() 
+	{
 		return driver.findElement(navigateToMyAc);
 	}
 
-	public WebElement navigateToRegister() {
+	public WebElement navigateToRegister() 
+	{
 		return driver.findElement(navigateToRegister);
 	}
 
-	public WebElement enterName() {
+	public WebElement enterName()
+	{
 		return driver.findElement(enterName);
 	}
+	public WebElement email()
+	{
+		return driver.findElement(email);
+	}
 
-	public WebElement enterLastName() {
+	public WebElement enterLastName() 
+	{
 		return driver.findElement(enterLastName);
 	}
 
-	public WebElement enterEmail() {
+	public WebElement enterEmail() 
+	{
 		return driver.findElement(enterEmail);
 	}
 
-	public WebElement enterPhone() {
+	public WebElement enterPhone()
+	{
 		return driver.findElement(enterPhone);
 	}
 
-	public WebElement enterPassword() {
+	public WebElement enterPassword()
+	{
 		return driver.findElement(enterPassword);
 	}
 
-	public WebElement enterConfirmPW() {
+	public WebElement enterConfirmPW() 
+	{
 		return driver.findElement(enterConfirmPW);
 	}
 
-	public WebElement Checkagree() {
+	public WebElement Checkagree()
+	{
 		return driver.findElement(Checkagree);
 	}
 
-	public WebElement clickContinue() {
+	public WebElement clickContinue() 
+	{
 		return driver.findElement(clickContinue);
 	}
+	
+	public WebElement registervalidtext()
+	{
+		return driver.findElement(validtext);
+	}
+
 
 }
